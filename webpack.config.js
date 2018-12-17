@@ -4,12 +4,13 @@ const webpack = require('webpack')
 module.exports = (env, args) => ({
     context: __dirname,
     entry: [
-        "./src/components/MyComponent.tsx"
+        "./src/index.ts"
     ],
 
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: "index.js"
+        filename: "index.js",
+        libraryTarget: "commonjs"
     },
 
     plugins: [
