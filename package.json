@@ -1,0 +1,22 @@
+{
+  "name": "bar",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "scripts": {
+    "build-react-production": "webpack --mode production"
+  }
+}
